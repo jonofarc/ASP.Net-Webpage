@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/Stylesheets/style.css">
+    <title>history website</title>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="header">
+        </div>
+
+
+        <div id="nav">
+            <ul>
+                <li><a href="/Default.aspx">Home</a></li>
+                <li><a href="/Webpages/Rome/Rome.aspx">Rome</a></li>
+                <li><a href="/Webpages/Misc/ContactUs.aspx">Contact Us</a></li>
+            </ul>
+            
+        </div>
+
+
+        <div class="sidebar">
+        </div>
+
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContent2" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
